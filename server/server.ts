@@ -52,7 +52,7 @@ export class Server {
           router.applyRoutes(this.application);
         }
 
-        this.application.listen(environment.server.port, () => {
+        this.application.listen(environment.server.port || 3000, () => {
           resolve(this.application);
         });
 
