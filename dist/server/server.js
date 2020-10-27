@@ -39,7 +39,7 @@ class Server {
                 for (let router of routers) {
                     router.applyRoutes(this.application);
                 }
-                this.application.listen(environment_1.environment.server.port || 3000, () => {
+                this.application.listen(environment_1.environment.server.port, () => {
                     resolve(this.application);
                 });
                 this.application.on("restifyError", error_handler_1.handleError);
