@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "outDir": "dist",
-    "target": "ES6",
-    "module": "commonjs"
-  },
-  "exclude": ["**/*.test.ts"]
-}
